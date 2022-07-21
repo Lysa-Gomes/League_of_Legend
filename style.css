@@ -1,0 +1,223 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+}
+.Container{
+    width:100%;
+    background-color: ;
+    display: flex;
+}
+.ContRiot{
+    width:30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.BoxLogo{
+    width: 100%;
+    margin: 15vh 0 5vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LogoRiot{
+    width:40%;
+}
+.BoxLogin{
+    width:100%;
+    font-size: 0.9vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.FormLogin{
+    width: 100%;
+    margin: 0 0 2vh 0;
+    padding:0 0 0 9.5%;
+    display: flex;
+    flex-direction: column;
+}
+.BoxInp{
+    width: 90%;
+    background-color: #e9e8e8;
+    margin: 2%;
+    padding: 1%;
+}
+.MarkLogin{
+    width: 100%;
+    padding:5% 0 2% 4%;
+    color:gray;
+    font-size: 0.8vw;
+}
+.MarkLogin:hover{
+    cursor: pointer;
+}
+.InpLogin{
+    width:100%;
+    padding: 2% 0 2% 4.2%;
+    outline: none;
+    border: none;
+    background-color: #e9e8e8;
+}
+.InpLogin:hover{
+    cursor: pointer;
+}
+.Icon{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+}
+.BtnIcon, .BtnIconM{
+    width: 23%;
+    border: none;
+}
+.BtnIcon:hover, .BtnIconM:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.BtnIconM{
+    margin: 0 5%;
+}
+.FaceBtn,.GleBtn,.AplBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0.3vw;
+}
+.FaceBtn{
+    width: 100%;
+    background-color: blue;
+}
+.GleBtn{
+    width: 100%;
+    background-color: red;
+
+}
+.AplBtn{
+    width: 100%;
+    background-color: black;
+}
+
+.ImgIcon{
+    width: 25%;
+    margin:5% 7%;
+}
+.ContLogad{
+    width: 100%;
+    padding-left: 11%;
+    font-size: 0.95vw;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+}
+.InpCheck{
+    margin-right: 2%;
+}
+.InpCheck:hover{
+    cursor: pointer;
+}
+.ContSeta{
+    width: 100%;
+    padding: 23% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.BtnSeta{
+    width: 13%;
+    padding: 1.2%;
+    background-color: #f69393;
+    border: none;
+    border-radius: 0.3vw;
+}
+.ativo{
+    background-color: red;
+}
+.BtnSeta:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.ContPerf{
+    width: 100%;
+    text-align: center;
+    font-size: 1vw;
+    padding-top: 5%;
+
+}
+.ImgSeta{
+    width: 100%;
+}
+
+.BoxLol{
+    width:100%;
+    height: 100vh;
+
+}
+.ImgLol{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+@media(max-width:500px){
+    .Container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .ContRiot{
+        width: 90%;
+        height:10% ;
+        overflow: hidden;
+        border-radius: 2vw 2vw 0 0;
+        background-color: whitesmoke;
+        position: absolute;
+        bottom: 0;
+    }
+    .ContRiot:hover{
+        animation: slide 2s forwards linear;
+    }
+    @keyframes slide {
+        from{
+            height: 10%;
+        }to{
+            height: 90%;
+        }
+    }
+    .BoxLogin{
+        font-size: 3vw;
+    }
+    .BoxLogo{
+        width: 100%;
+        padding: 0;
+        margin: 5%;
+    }
+    .MarkLogin{
+        font-size: 2.5vw;
+    }
+    .ContLogad{
+        font-size: 2vw;
+    }
+    .ContPerf{
+        font-size: 2.5vw;
+    }
+    .LogoRiot{
+        width: 40%;
+    }
+    .ImgLol{
+        height: 100%;
+        object-position:53% 70%;
+    }
+}
